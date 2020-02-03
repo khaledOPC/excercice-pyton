@@ -1,13 +1,6 @@
+# Je créer la fonction def get_number_of_vowels
+
 def get_number_of_vowels(word):
+	return sum(1 for letter in word if letter in "aeiouyAEIOUY")
 
-
-
-	nb_of_vowels = 0
-
-	for letter in "aeiouy":
-		nb_of_vowels += 1
-	return nb_of_vowels
-
-
-word = input("Entrez votre mot")
-print("Il y'a",get_number_of_vowels(word),"voyelle dans le mot",word)
+print(get_number_of_vowels("Openclassroom"))
